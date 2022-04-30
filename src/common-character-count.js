@@ -16,7 +16,7 @@ const getCommonCharacterCount = (s1, s2) => {
     const copyStr = s2.split('')
     return s1.split('').filter(current => {
         let i = copyStr.indexOf(current)
-        if(i !== 1){
+        if(i + 1){
             copyStr.splice(i, 1)
             return true
         }
